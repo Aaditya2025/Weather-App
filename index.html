@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="mainBox">
+        <img src="/images/drizzle.png" alt="">
+        <h1>Weather</h1>
+        <h2>ForeCasts</h2>
+        <button>Start</button>
+    </div>
+
+    <div class="mainBox">
+        <div class="searchBox">
+            <input type="text" placeholder="Enter Your City Name" id="inputField">
+            <img src="/images/search.png" id="searchIcon" alt="searchIcon">
+        </div>
+        <div class="iconBox"> 
+            <img src="/images/haze.png" alt="">
+            <p>Description</p>
+        </div>
+        <div class="tempBox">
+            <h1 id="temp">0°C </h1>
+            <h3 id="city">Greater Noida</h3>
+        </div>
+        <div class="extraDetails">
+            <div class="windBox">
+                <img src="images/wind.png" id="windIcon" alt="windImage">
+                <div class="windData">
+                    <p id="windSpeed">0Km/hr</p>
+                    <p>Wind</p>
+                </div>
+            </div>
+            <div class="humidityBox">
+                <img src="images/humidity.png" id="humidityIcon" alt="humidityImage">
+                <div class="humidityData">
+                    <p id="humiditySpeed">0Km/hr</p>
+                    <p>Humidity/p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mainBox">
+        <h1>404</h1>
+        <p>Oops! Page Not Found</p>
+        <p id="info">The page you've looking for doesn't exist or has been removed</p>
+        <button>Go Home</button>
+    </div>
 </body>
+<script src="weather.js"></script>
 </html>
