@@ -6,7 +6,7 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: linear-gradient(#9e7ddc, #bc97d9);
     font-family: "Poppins", serif;
@@ -79,6 +79,7 @@ body{
 }
 
 #searchIcon{
+    cursor: pointer;
     height: 20px;
     margin-right: 10px
 }
@@ -86,7 +87,7 @@ body{
 .img img{
     width: 20px;
     margin-right: 10px;
-
+    
 }
 
 .iconBox{
@@ -162,4 +163,8 @@ body{
 #info{
     font-size: 11px;
     margin: 5px 0 5px 0;
+}
+
+.inactive{
+    display: none;
 }

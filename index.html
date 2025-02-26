@@ -12,7 +12,7 @@
 <body>
 
     <!-- 1st Box -->
-    <div class="mainBox">
+    <div class="mainBox mainBox1 ">
         <img src="/images/drizzle.png" alt="drizzleImage" class="drizzle">
         <h1 class="weather">Weather</h1>
         <h2 class="forecast">ForeCasts</h2>
@@ -20,14 +20,14 @@
     </div>
 
     <!-- 2nd Box -->
-    <div class="mainBox">
+    <div class="mainBox mainBox2 inactive">
         <div class="searchBox">
             <input type="text" placeholder="Enter Your City Name" id="inputField">
             <img src="/images/search.png" id="searchIcon" alt="searchIcon" >
         </div>
         <div class="iconBox"> 
-            <img src="/images/haze.png" class="weathers" id="hazeImage">
-            <p>Description</p>
+            <img src="/images/haze.png" class="weathers" id="icon">
+            <p id="desc">Description</p>
         </div>
         <div class="tempBox">
             <h1 id="temp">0°C </h1>
@@ -37,14 +37,14 @@
             <div class="windBox">
                 <img src="images/wind.png" class="weathers" id="windIcon" alt="windImage">
                 <div class="windData">
-                    <p id="windSpeed">0Km/hr</p>
+                    <p id="windSpeed">0Km/h</p>
                     <p>Wind</p>
                 </div>
             </div>
             <div class="humidityBox">
                 <img src="images/humidity.png" class="weathers" id="humidityIcon" alt="humidityImage">
                 <div class="humidityData">
-                    <p id="humiditySpeed">0Km/hr</p>
+                    <p id="humiditySpeed">0Km/h</p>
                     <p>Humidity</p>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     </div>
 
     <!-- 3rd Box -->
-    <div class="mainBox">
+    <div class="mainBox mainBox3 inactive">
         <h1>404</h1>
         <p>Oops! Page Not Found</p>
         <p id="info">The page you've looking for doesn't exist or has been removed</p>
