@@ -46,14 +46,14 @@ searchBox.addEventListener('keypress', (e) => {
 
 function changeIcon(weatherMain){
     let icons = {
-        Clouds: "images/cloud.jpg",
-        Rains: "images/rain.jpg",
-        Mist: "images/mist.jpg",
-        Haze: "images/haze.jpg",
-        Snow: "images/snow.jpg",
-        Clear: "images/clear.jpg"
+        Clouds: "images/cloud.png",
+        Rains: "images/rain.png",
+        Mist: "images/mist.png",
+        Haze: "images/haze.png",
+        Snow: "images/snow.png",
+        Clear: "images/clear.png"
     }
-    icon.src = icons[weatherMain] || "images/clear.jpg";
+    icon.src = icons[weatherMain] || "images/clear.png";
 }
 
 //API fetching Part: 
@@ -71,7 +71,7 @@ async function getWeatherData(city) {
         wind.innerHTML = '0Km/h'
         humidity.innerHTML = "0%";
         searchBox.value = ""; 
-        icon.src = "images/clear.jpg"
+        icon.src = "images/clear.png"
     }
 
     desc.innerHTML = (weatherData.weather[0].description).toUpperCase(); 
